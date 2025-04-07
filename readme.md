@@ -6,5 +6,5 @@ It adds a button to tollbar. If something exists in top layer, clicking the butt
 
 ## Instalation
 Download the mirror-bottom-to-top.zip from Releases
-In KiCAD, open Plugin and Content Manager and click Install from File... (and select the zip file you downloaded)
+In KiCAD, open **Plugin and Content Manager** and click **Install from File...** (and select the zip file you downloaded)
 

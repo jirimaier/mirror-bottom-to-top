@@ -1,0 +1,11 @@
+{
+    "name": "Mirror Bottom to Top (with Filled Shapes)",
+    "description": "Mirrors bottom copper tracks and filled shapes to top layer, reflected across horizontal Aux Origin.",
+    "version": "1.0.0",
+    "author": "Jiri Maier",
+    "url": "https://github.com/jirimaier/mirror-bottom-to-top",
+    "category": "Modify",
+    "keywords": ["mirror", "tracks", "top", "bottom", "kicad", "action plugin"],
+    "platforms": ["linux", "windows", "mac"]
+  }
+  

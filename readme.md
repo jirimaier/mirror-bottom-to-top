@@ -1,25 +1,7 @@
-# Mirror Bottom to Top (with Filled Shapes)
+# Mirror Bottom to Top KiCAD Plugin
 
-This KiCad action plugin mirrors all bottom copper tracks and filled shapes (circles, rectangles, polygons, etc.) to the top copper layer across the horizontal Aux Origin.
+This KiCad action plugin mirrors all bottom copper tracks and filled shapes (circles, rectangles, polygons, etc.) to the top copper layer across horizontal axis passing through drill/place origin.
 
-## 🛠 Features
-- Removes top-layer tracks and shapes before mirroring
-- Works with tracks and complex filled shapes
-- Great for symmetrical or two-layer designs
+It adds a button to tollbar. If something exists in top layer, clicking the button will delete it. If top layer is empty, clicking the button will crete the mirrored version on bottom in top. (So refreshing the top layer after bottom is changed requires two clicks)
 
-## 📦 Installation
-1. Clone or download this repo.
-2. Copy the `mirror_bottom_to_top` folder into your KiCad plugins directory:
-   - Linux: `~/.local/share/kicad/7.0/scripting/plugins/`
-   - Windows: `C:\Users\YourName\AppData\Roaming\kicad\7.0\scripting\plugins\`
-3. Restart KiCad.
 
-## ✅ Usage
-- Open PCB editor.
-- Click the plugin icon in the toolbar or find it in `Tools → External Plugins`.
-
-## 📷 Preview
-*Coming soon — add screenshots or gifs!*
-
-## 📝 License
-MIT

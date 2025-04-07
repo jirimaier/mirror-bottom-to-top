@@ -18,7 +18,7 @@ jobs:
 
       - name: Create ZIP of repo contents (excluding .git, .github, .gitignore)
         run: |
-          zip -r repo.zip . -x ".git/*" ".github/*" ".gitignore"
+          zip -r mirror-bottom-to-top.zip . -x ".git/*" ".github/*" ".gitignore"
 
       - name: Generate unique release tag
         id: tag

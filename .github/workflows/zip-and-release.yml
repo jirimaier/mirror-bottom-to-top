@@ -29,6 +29,6 @@ jobs:
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: "Release ${{ steps.tag.outputs.tag }}"
-          files: repo.zip
+          files: mirror-bottom-to-top.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

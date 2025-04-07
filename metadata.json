@@ -1,16 +1,42 @@
 {
-    "name": "Mirror Bottom to Top (with Filled Shapes)",
-    "description": "Mirrors bottom copper to top copper.",
-    "description_full": "Mirrors bottom copper tracks and filled shapes to top layer, reflected across horizontal Aux Origin.",
-    "identifier": "mirror-bottom-to-top",
-    "license": "MIT",
-    "version": "1.0.0",
-    "author": "Jiri Maier",
-    "type": "plugin",
-    "url": "https://github.com/jirimaier/mirror-bottom-to-top",
-    "category": "Modify",
-    "keywords": ["mirror", "tracks", "top", "bottom", "kicad", "action plugin"],
-    "platforms": ["linux", "windows", "mac"],
-    "kicad_version": "7.0"
-  }
-  
+  "name": "Mirror Bottom to Top (with Filled Shapes)",
+  "description": "Mirrors bottom copper to top copper.",
+  "description_full": "Mirrors bottom copper tracks and filled shapes to top layer, reflected across the horizontal Aux Origin in KiCad PCB editor.",
+  "identifier": "mirror-bottom-to-top",
+  "license": "MIT",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jiri Maier",
+    "contact": {
+      "email": "jiri.maier.x@gmail.com"
+    }
+  },
+  "type": "plugin",
+  "category": "general",
+  "keywords": [
+    "mirror",
+    "tracks",
+    "top",
+    "bottom",
+    "kicad",
+    "action plugin"
+  ],
+  "platforms": [
+    "linux",
+    "windows",
+    "mac"
+  ],
+  "kicad_version": "7.0",
+  "resources": {
+    "homepage": "https://github.com/jirimaier/mirror-bottom-to-top",
+    "repository": "https://github.com/jirimaier/mirror-bottom-to-top"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "download_url": "https://github.com/jirimaier/mirror-bottom-to-top/archive/refs/tags/v1.0.0.zip",
+      "kicad_version": "7.0",
+      "status": "stable"
+    }
+  ]
+}

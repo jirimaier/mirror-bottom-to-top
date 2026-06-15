@@ -81,7 +81,15 @@ class MirrorBottomToTopPlugin(ActionPlugin):
                     new_shape.SetShape(shape_type)
                     new_shape.SetLayer(top_layer)
                     new_shape.SetWidth(item.GetWidth())
-                    if hasattr(new_shape, "SetFilled") and item.IsFilled():
+                    is_filled = False
+                    if hasattr(item, "IsFilled"):
+                        is_filled = item.IsFilled()
+                    elif hasattr(item, "IsSolid"):
+                        is_filled = item.IsSolid()
+                    elif hasattr(item, "GetFilled"):
+                        is_filled = item.GetFilled()
+
+                    if hasattr(new_shape, "SetFilled") and is_filled:
                         new_shape.SetFilled(True)
     
                     # Mirror Start/End

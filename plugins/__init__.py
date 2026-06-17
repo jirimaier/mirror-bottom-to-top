@@ -89,9 +89,6 @@ class MirrorBottomToTopPlugin(ActionPlugin):
                     elif hasattr(item, "GetFilled"):
                         is_filled = item.GetFilled()
 
-                    if hasattr(new_shape, "SetFilled") and is_filled:
-                        new_shape.SetFilled(True)
-    
                     # Mirror Start/End
                     p1 = item.GetStart()
                     p2 = item.GetEnd()
@@ -111,7 +108,10 @@ class MirrorBottomToTopPlugin(ActionPlugin):
                                 mirrored_pt = pcbnew.VECTOR2I(pt.x, 2 * origin_y - pt.y)
                                 mirrored_poly.Append(mirrored_pt)
                         new_shape.SetPolyShape(mirrored_poly)
-    
+
+                    if hasattr(new_shape, "SetFilled"):
+                        new_shape.SetFilled(is_filled)
+     
                     board.Add(new_shape)
 
         pcbnew.Refresh()
